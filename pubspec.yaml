@@ -10,7 +10,7 @@ flutter:
   plugin:
     platforms:
       web:
-        pluginClass: ConnectivityPlusPlugin
+        pluginClass: ConnectivityPlusWebPlugin
         fileName: connectivity_plus_web.dart
 
 dependencies:
