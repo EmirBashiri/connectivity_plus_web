@@ -5,12 +5,6 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 export 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart'
     show ConnectivityResult;
 
-// Export the web implementation only when compiling for web. Use a non-web stub
-// for other platforms so files that import `dart:html` are not compiled on
-// Android/iOS builds.
-export 'src/connectivity_plus_stub.dart'
-    if (dart.library.html) 'src/connectivity_plus_web.dart';
-
 import 'src/dart_html_connectivity_plugin.dart';
 
 /// The web implementation of the ConnectivityPlatform of the Connectivity plugin.
