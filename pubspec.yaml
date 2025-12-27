@@ -1,6 +1,6 @@
 name: connectivity_plus_web
 description: Flutter plugin for discovering the state of the network (WiFi & Offline) connectivity on Web.
-version: 1.0.0
+version: 1.0.1
 publish_to: 'none'
 environment:
   sdk: ">=2.17.3 <3.0.0"
