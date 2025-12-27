@@ -1,0 +1,30 @@
+name: connectivity_plus_web
+description: Flutter plugin for discovering the state of the network (WiFi & Offline) connectivity on Web.
+version: 1.0.0
+publish_to: 'none'
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  connectivity_plus_platform_interface:
+     git:
+       url: https://github.com/emirbashiri/connectivity_plus_platform_interface
+       ref: main
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  plugin:
+    platforms:
+      web:
+        pluginClass: ConnectivityPlusWebWeb
+        fileName: connectivity_plus_web_web.dart
